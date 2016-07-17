@@ -1,0 +1,10 @@
+
+<font size=2 color="#eee">
+<ul>
+ <% @comments.take(10).each do |comment| %>
+      <%= link_to blog_path(comment.blog_id)  do %>
+         <li> <%= comment.user.first_name %> commented on <%= comment.blog.author %>'s post.</li>
+      <% end %>
+   <%end%> 
+</ul>
+</font>

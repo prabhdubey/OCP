@@ -1,0 +1,30 @@
+
+  <!--header-top-end-->
+  <!--start-header-->
+  <div class="header">
+    <div class="container">
+      <div class="head">
+      <ul class="nav nav-pills">
+  <li><%=link_to "Home",blogs_path%></li>
+  <li><%=link_to "New Post",new_blog_path%></li>
+  <li><a href="/blogs/draft"data-toggle="">Draft</a></li>
+  <li><%=link_to "Chat",rooms_show_path%></li>
+  <li><%=link_to "Log out",destroy_user_session_path,method: :delete%></li>
+ 
+</ul>
+      <div class="header-right">
+        <div class="search-bar">
+          <!-- <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"> -->
+          <!-- <input type="submit" value=""> -->
+          <%= render "search" %>   
+        </div>
+        <ul>
+          <li><a href="#"><span class="fb"> </span></a></li>
+          <li><a href="#"><span class="twit"> </span></a></li>
+          
+        </ul>
+      </div>
+        <div class="clearfix"></div>
+      </div>
+      </div>
+    </div>  

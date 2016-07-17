@@ -1,0 +1,11 @@
+<li class="left clearfix">
+  <p> 
+    <%if message.user.avatar.present? %>
+      <%= image_tag message.user.avatar, class: "cool1image"%>
+    <%else%>
+      <img src="/assets/missing.jpg" class="cool1image"></span>   
+    <%end%>    
+    <b><%= message.user.first_name %></b>
+    <%= message.content %>
+  </p>    
+</li>

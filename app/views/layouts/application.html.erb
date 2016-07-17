@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One College Portal</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+
+    <%=yield(:head)%>
+    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+    <script type="text/javascript">$(document).ready(function() {
+      if ($('textarea').length > 0) {
+          var data = $('textarea');
+          $.each(data, function(i) {
+              CKEDITOR.replace(data[i].id);
+          });
+      }
+      });</script>
+    </head>
+
+  <body>
+  
+       
+    <%= yield %>
+  </body>
+</html>

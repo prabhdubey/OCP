@@ -1,0 +1,25 @@
+
+                <div class="about-one">
+                  
+                  <h3><%= blog.title %></h3>
+                </div>
+                <div class="about-two">
+                <% if blog.image.present? %>
+                  <%= image_tag blog.image %>
+                  <% end %>
+                  <p>Posted by <%= blog.author %> on <%= blog.created_at %>
+                   <a href="#">comments<font color="red" ><sup>(<%= blog.comments.count %>)</sup></font></a>
+                  </p>
+                  <p><%= blog.body.html_safe %></p>
+                  <div class="about-btn">
+                    <%= link_to 'Read More', blog %>
+                  </div>
+                  <ul>
+                    <li><a href="#"><span class="fb"> </span></a></li>
+                    <li><a href="#"><span class="twit"> </span></a></li>
+                    <li><a href="#"><span class="pin"> </span></a></li>
+                    <li><a href="#"><span class="rss"> </span></a></li>
+                    <li><a href="#"><span class="drbl"> </span></a></li>
+                  </ul>
+                </div> 
+                

@@ -1,0 +1,9 @@
+class AddImageToBlog < ActiveRecord::Migration
+  def self.up
+    add_column :blogs, :image_file_name
+    add_column :blogs, :image_content_type
+    add_column :blogs, :image_file_size
+    add_column :blogs, :image_updated_at
+  end	
+  
+end
