@@ -24,7 +24,7 @@ config.assets.precompile += %w( ckeditor/* )
          authentication: :login,
          enable_starttls_auto: true,
          user_name: "onecollegeportal@gmail.com",
-         password: "12345678**"
+         password: "prabhdubey"
     }
   end
 end
