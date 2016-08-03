@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One College Portal</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag    'blogpage', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'blogpage', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%=yield(:head)%>
+</head>
+<body>
+ <%= render 'header'%> 
+<%= yield %>
+<%=render 'footer'%>
+
+</body>
+</html>

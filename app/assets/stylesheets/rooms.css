@@ -1,0 +1,82 @@
+
+
+a{
+    color:#FAFDFF !important;
+}
+.cool1image{ 
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #141740;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.footer { 
+    position: fixed; 
+}
+
+.panel-heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.panel-body {
+    padding-bottom: 0px !important;
+    position: fixed;
+    top: 43px;
+    bottom: 67px;
+    overflow-y: auto;
+    height: auto;
+}
+
+.panel-footer {
+    position: fixed;
+    bottom: 0;
+}

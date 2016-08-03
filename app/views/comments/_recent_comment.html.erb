@@ -1,0 +1,5 @@
+
+<%= link_to blog_path(comment.blog_id)  do %>
+         <li> <%= comment.user.first_name %> commented on <%= comment.blog.author %>'s post.</li>
+<% end %>
+

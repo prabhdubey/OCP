@@ -1,0 +1,147 @@
+
+  <div class="about">
+    <div class="container">
+      <div class="about-main">
+        <div class="col-md-8 about-left">
+        <% @blogs.each_with_index do |blog,i| %>
+          <div id="newblogs">
+                      
+          </div>
+          <% break if i == 0 %> 
+          <%end%>
+
+          
+          <div class="about-tre">
+                
+                  <div class="a-1">
+                  <% @blogs.each do |blog| %>
+                    <div class="col-md-6 abt-left">
+                      
+                      <%= image_tag blog.image, class: "cool1img" %>
+                      <h3><%= link_to blog.title, blog %></h3>
+                       <p><%= blog.body.first(100).html_safe %></p> 
+                       <div class="about-btn">
+                        <%= link_to 'Read More', blog %>
+                      </div>
+                      <label> <%= blog.updated_at.strftime("%m/%d/%Y") %></label>
+                    </div>
+                    
+
+                <%end%>
+                
+              <div class="clearfix"></div>
+            </div>
+            
+          </div>  
+        </div>
+        <div class="col-md-4 about-right heading">
+          
+              <%= render "topViews" %> 
+              <br>
+          <h3>Recent Activity</h3>
+           <div id="recent_comments">
+            <%= render "comments/recent" %>
+           </div> 
+               
+          <div class="abt-2">
+            <h3>NEWS LETTER</h3>
+            <div class="news">
+              <form>
+                <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>      
+      </div>    
+    </div>
+  </div>
+  <!--about-end-->
+  <!--slide-starts-->
+  <div class="slide">
+    <div class="container">
+      <div class="fle-xsel">
+      <ul id="flexiselDemo3">
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-1.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-2.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>     
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-3.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>   
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-4.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-5.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="#">
+            <div class="banner-1">
+              <img src="assets/s-6.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>       
+      </ul>
+              
+               <script type="text/javascript">
+                $(window).load(function() {
+                  
+                  $("#flexiselDemo3").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,        
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: { 
+                      portrait: { 
+                        changePoint:480,
+                        visibleItems: 2
+                      }, 
+                      landscape: { 
+                        changePoint:640,
+                        visibleItems: 3
+                      },
+                      tablet: { 
+                        changePoint:768,
+                        visibleItems: 3
+                      }
+                    }
+                  });
+                  
+                });
+                </script>
+                <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+          <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>  
+  <!--slide-end-->
+  <!--footer-starts-->
+  
+  <!--footer-end-->
+

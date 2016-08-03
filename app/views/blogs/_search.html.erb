@@ -1,0 +1,16 @@
+<%= form_for(blogs_path, remote: :true, method: :get, html: { id: "searchform", class: '' }) do |f| %> 
+  <div class="field">
+    <%= text_field_tag :title, nil, id: "search", placeholder: "Search Blogs", class: ""  %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#search").keyup(function() {
+    	clearTimeout(window.search);
+    	window.search = setTimeout(function(){
+    		$("#searchform").submit();		
+    	}, 500);
+    });
+  });
+</script>

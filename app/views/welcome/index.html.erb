@@ -1,0 +1,237 @@
+<div class="sticky">
+
+<header id="header" class="header wrapper-center-block " data-lead-id="header">
+    <div class="container">
+     <%if notice %>
+        <p class="alert alert-success" role="alert"><%= notice %></p>
+    <% end %>
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-3 center-block center-block-inline vcenter text-xs-center text-sm-center text-left">
+                <a data-lead-id="logo">
+                <img class="logo" src="<%= image_url("logo.png") %>" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-md-9 center-block center-block-inline vcenter text-xs-center text-sm-center text-right" data-lead-id="nav">
+                <ul class="header-nav">
+                    <li><a href="" data-lead-id="nav-link-1">ABOUT</a></li>
+                    <li><a href="" data-lead-id="nav-link-4">DEVELOPERS</a></li>
+                    <li><a href="" data-lead-id="nav-link-5">CONTACT</a></li>
+                      
+                                        <!-- <li><a href="" data-lead-id="nav-link-5">CONTACT</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+</div>
+
+<div class="contact-bar" data-lead-id="contact-bar">
+    <div class="container">
+        <div class="col-xs-12 col-md-7 vcenter text-xs-center text-sm-center">
+            <p class="tagline" data-lead-id="contact-tagline">Solving Your Problems Efficiently, Effectively, and Ethically</p>
+        </div>
+        <div class="col-xs-12 col-md-5 vcenter text-xs-center text-sm-center text-right">
+            <div class="contact-line phone vcenter" data-lead-id="contact-phone-wrapper">
+                <i class="fa fa-phone" data-lead-id="contact-phone-icon"></i>
+                <p data-lead-id="contact-phone">555 555 5555</p>
+            </div>
+            <div class="contact-line email vcenter" data-lead-id="contact-email-wrapper">
+                <i class="fa fa-envelope" data-lead-id="contact-email-icon"></i>
+                <p data-lead-id="contact-email">onecollegeportal@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-bg-banner banner" data-lead-id="banner">
+    <div class="bg-wrapper">
+        <img src="<%= image_url("banner.jpg") %>" alt="" data-lead-id="banner-bg">
+    </div>
+    <div class="bg-text middle">
+        <div class="fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h1 data-lead-id="banner-title">Experience. Dedication. Results.</h1>
+                        <p class="lg" data-lead-id="banner-text">Have it your way!</p>
+                        <div class="btn-inline-wrap text-center">
+                           <%= link_to "Connect With Us",new_user_session_path, class: "btn btn-inline", "data-lead-id": "banner-btn" %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section1" class="wrapper wrapper-center-block about" data-lead-id="about">
+    <div class="container">
+        <div class="row text-center row-vr">
+            <div class="col-xs-12 col-md-7 vcenter text-left" data-lead-id="about-left">
+                <div class="fill">
+                    <h3 data-lead-id="about-lead">One College Portal</h3>
+                    <h2 data-lead-id="about-title">What can you do here ?</h2>
+                    <p data-lead-id="about-text-1">The admins of One College Portal are dedicated to finding the best outcome to your problems.It provides a platform for letting you know all about the events taking place in your campus.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5 vcenter text-left" data-lead-id="about-right">
+                <p class="about-content" data-lead-id="about-text-2">At One College Portal, integrity is our watchword. Our admins are open and honest about your situation. They will answer all of your questions, so you are never left in the dark about progress on your complaint, concerns you may have or legal definitions that can affect your goals. Giving you quality, professional representation is the most important thing we do.<br>
+                <br>
+                We give your case the care and consideration it deserves while seeking the best possible solution.</p>
+            </div>
+            <div class="vr" data-lead-id="about-vr"></div>
+        </div>
+    </div>
+</div>
+
+<div id="section2" class="wrapper wrapper-center-block details" data-lead-id="details">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="lined" data-lead-id="details-title">Specialities</h4>
+                <div class="title-line" data-lead-id="details-title-line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-1">
+                <div class="fill">
+                    <img class="img-responsive img-inline"  src="<%= image_url("detail-1.png") %>" alt="" data-lead-id="detail-1-img">
+                    <h5 data-lead-id="detail-1-title">JYC</h5>
+                    <p data-lead-id="detail-1-text">All information regarding any of the events can be posted here. Promotion of any king of events as well as college fest can be done here.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-2">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="<%= image_url("detail-2.png") %>" alt="" data-lead-id="detail-2-img">
+                    <h5 data-lead-id="detail-2-title">Training & Placement</h5>
+                    <p data-lead-id="detail-2-text">OCP gives you the opportunity to enquire about the placement activities in your college that could be fficiently answered by our admins as well as the students and faculty themselves.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 vcenter" data-lead-id="detail-3">
+                <div class="fill">
+                    <img class="img-responsive img-inline" src="<%= image_url("detail-3.png") %>" alt="" data-lead-id="detail-3-img">
+                    <h5 data-lead-id="detail-3-title">Notice Board</h5>
+                    <p data-lead-id="detail-3-text">Our admins can help you with real problems you might be facing and wish to bring them out in front of the other students and faculty of your university. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="wrapper wrapper-center-block testimonials" data-lead-id="testimonials">
+    <div class="container">
+        <div class="row text-center row-vr">
+            <div class="col-xs-12 col-md-7 center-block center-block-inline text-left" data-lead-id="testimonials-left">
+                <h4 data-lead-id="testimonial-left-title">Top Articles</h4>
+                <div class="testimonial-list">
+                    <blockquote class="testimonial" data-lead-id="testimonial-1">
+                       
+                        <div class="fill">
+                            <p data-lead-id="testimonial-1-text">"My case was resolved much, much more quickly and efficiently than I could've ever anticipated."</p>
+                            <p class="tesitmonial-title" data-lead-id="testimonial-1-title"><strong>Mary Cat, Industrial Builders Inc.</strong></p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="testimonial" data-lead-id="testimonial-2">
+                       
+                        <div class="fill">
+                            <p data-lead-id="testimonial-2-text">"I’m incredibly grateful for all the patience and expertise devoted to my case."</p>
+                            <p class="tesitmonial-title" data-lead-id="testimonial-2-title"><strong>Mark Tabby, Mark's Hardware.</strong></p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="testimonial" data-lead-id="testimonial-3">
+                        
+                        <div class="fill">
+                            <p data-lead-id="testimonial-3-text">"Whenever I needed information or just wanted some reassurance during my case, I was able to get answers."</p>
+                            <p class="tesitmonial-title" data-lead-id="testimonial-3-title"><strong>Scarlett Coon, The Cleanery</strong></p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5 center-block center-block-inline text-left" data-lead-id="testimonials-right">
+                <h4 data-lead-id="testimonial-right-title">What Makes Us Different</h4>
+                <p data-lead-id="testimonial-right-text">At One College Portal, we understand that your case is important to you. We treat you and your case with the respect you deserve. Our administrators get to know you and your situation personally, so they can present the full picture to the college, university or organization.<br>
+                <br>
+                We are always available to answer your questions and address your concerns. Once you become our client, you will receive your attorney’s personal phone number so you can reach him or her whenever you need to.<br>
+                <br>
+                Our goal is to take the burden of your problem off of your shoulders. We will review your case and look at all available options to find the best solution for your individual situation. Our administrators will always represent your best interests.</p>
+            </div>
+            <div class="vr" data-lead-id="testimonial-vr"></div>
+        </div>
+    </div>
+</div>
+
+<div id="section4" class="wrapper wrapper-center-block cta" data-lead-id="cta">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-10 col-lg-8 center-block">
+                <h4 class="lined" data-lead-id="cta-title">Ready to Talk to Us?</h4>
+                <div class="title-line" data-lead-id="cta-title-line"></div>
+                <p class="lg" data-lead-id="cta-text">We’re looking forward to meeting you and discussing the options available to solve your problem. Our admins are ready to find a solution to your problem. Please click the button below to schedule your consultation.</p>
+                <div class="btn-inline-wrap text-center">
+                    <a class="btn btn-inline" data-lead-id="cta-btn">WRITE TO US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr style ="margin-top:0px;margin-bottom:0px;">
+
+<footer id="section5" class="footer" data-lead-id="footer">
+    <div class="wrapper wrapper-center-block footer-contact" data-lead-id="footer-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <div class="row text-center">
+                        <div class="col-xs-12 col-sm-6 center-block center-block-inline text-xs-center text-left" data-lead-id="footer-col-1">
+                            <div class="fill">
+                                <a data-lead-id="footer-logo"><img class="footer-logo" src="<%= image_url("logo.png") %>"alt=""></a>
+                                <p class="footer-logo-text" data-lead-id="footer-logo-text">One College Portal is ready and willing to fight ethically for you.</p>
+                                <h5 data-lead-id="footer-contact-title">CONTACT</h5>
+                                <div class="footer-icon-wrapper" data-lead-id="footer-phone-wrapper">
+                                    <i class="fa fa-phone" data-lead-id="footer-phone-icon"></i>
+                                    <p data-lead-id="footer-phone">555.555.5555</p>
+                                </div><br>
+                                <div class="footer-icon-wrapper" data-lead-id="footer-email-wrapper">
+                                    <i class="fa fa-envelope" data-lead-id="footer-email-icon"></i>
+                                    <p data-lead-id="footer-email">onecollegeportal@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 center-block center-block-inline text-center" data-lead-id="footer-col-2">
+                            <div class="fill">
+                                <h5 data-lead-id="footer-location-title">LOCATION</h5>
+                                <div class="footer-icon-wrapper footer-location-wrapper" data-lead-id="footer-location-wrapper">
+                                    <i class="fa fa-map-marker" data-lead-id="footer-location-icon"></i>
+                                    <p data-lead-id="footer-location">One College Portal<br>
+                                    Jaypee University<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 center-block center-block-inline" data-lead-id="footer-col-3">
+                    <h5 class="text-xs-center" data-lead-id="footer-mission-title">OUR MISSION</h5>
+                    <p data-lead-id="footer-mission-text">Our mission at One College Portal is to provide professional, ethical and cost-effective legal representation to our clients. We handle every case as if we were representing a close friend or family member. We strive for excellence in our service and a satisfactory resolution to our clients’ concerns.<br>
+                    <br>
+                    One College Portal upholds the values of exceptional service, ethical practice and quality legal representation, regardless of the size or value of any client’s case.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-legal" data-lead-id="footer-legal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 vcenter text-xs-center">
+                    <ul class="footer-list" data-lead-id="footer-social">
+                       
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 vcenter text-xs-center text-right">
+                    <p class="copyright" data-lead-id="copyright">© 2016 One College Portal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                </p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div style="position: absolute; bottom: 0px; top: 0px; right: 0px; left: 0px; z-index: 2147483646; width: 100%; opacity: 0.5; display: none; height: 4578px; background: black;"></div>

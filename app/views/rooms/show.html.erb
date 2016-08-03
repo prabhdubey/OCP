@@ -1,0 +1,32 @@
+    <div class="row">
+        <div class="col-md-12" style="height: 1990px;">
+            <div class="panel panel-primary" style="width: 1314px;">
+                <div class="panel-heading">
+                     Chat Room
+                    <div class="btn-group pull-right">
+                        <ul class="nav nav-pills">
+                            <li><%=link_to "Home",blogs_path%></li>
+                            <li><%=link_to "Log out",destroy_user_session_path,method: :delete%></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul id="messages" class="chat">
+                       <%= render @messages %>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                    <input id="user_id" type="hidden" value="<%=current_user.id%>">
+                        <input id="btn-input " type="text" class="form-control input-lg" placeholder="Type your message here..." data-behavior="room_speaker"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-lg" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+    

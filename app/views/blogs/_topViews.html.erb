@@ -1,0 +1,21 @@
+<div class="abt-2">
+<h3>MOST VIEWED POSTS</h3>
+<% @blogs= Blog.order(views: :desc).limit(5) %>
+   <% @blogs.each do |blog| %>    
+            <% if blog.flag == 1 %>
+              <div class="might-grid">
+                <div class="grid-might">
+                  <%= image_tag blog.image, class: "coolimg" %>
+                </div>
+             
+                <%= link_to blog_path(blog.id)  do %>
+                  <div class="might-top">
+                    <h4><%= blog.title %></h4>
+                    <p><%= blog.body.first(50).html_safe %></p> 
+                  </div>
+               <%end%> 
+             <%end%>  
+           <div class="clearfix"></div>
+      </div>  
+ <%end%>     
+              
